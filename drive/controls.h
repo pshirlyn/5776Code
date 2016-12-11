@@ -5,7 +5,8 @@ struct Controls {
 	int liftDown;
 	int liftLimit;
 	int transmission;
-	int claw;
+	int clawClose;
+	int clawOpen;
 	int hang;
 };
 
@@ -23,8 +24,10 @@ task initializeControls {
 
 		c.liftUp = vexRT[Btn6U];
 		c.liftDown = vexRT[Btn6D];
-		c.claw = vexRT[Btn5D];
-		c.hang = vexRT[Btn8R];
+		c.clawClose = vexRT[Btn5D];
+		c.clawOpen = vexRT[Btn5U];
+
+		c.hang = vexRT[Btn8D];
 
 		wait1Msec(20);
 	}

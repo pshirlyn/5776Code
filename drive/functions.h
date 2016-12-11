@@ -1,6 +1,6 @@
 void moveDrive (int left, int right) {
-	motor[LDrive] = left;
-	motor[RDrive] = right;
+	motor[LDrive] = motor[LDrive2] = left;
+	motor[RDrive] = motor[RDrive2] = right;
 }
 
 void moveLift (int speed) {
@@ -11,5 +11,5 @@ void moveLift (int speed) {
 }
 
 void clawState (int state) {
-	SensorValue(ClawSolenoid) = state;
+	SensorValue[ClawSolenoid] = state;
 }

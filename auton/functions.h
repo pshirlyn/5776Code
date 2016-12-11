@@ -113,12 +113,6 @@ void autonLiftDown (int angle) {
 // Bellarmine deploy; change for Fairfield
 void deploy() {
 	const int WING_UP_ANGLE = 1800; // wing up angle
-	while (SensorValue(WingPot) < WING_UP_ANGLE) {
-		motor[LWing] = 110;
-		motor[RWing] = 110;
-		wait1Msec(20);
-	}
-	motor[LWing] = 0;
-	motor[RWing] = 0;
+
 	SensorValue(ClawSolenoid) = 1;
 }

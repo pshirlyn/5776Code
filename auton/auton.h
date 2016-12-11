@@ -24,3 +24,5 @@ void cubeScore (int direction) {
 	autonLiftUp(4 * LIFT_CUBE_SCORE/5); // release cube - lift whatever distance wasn't lifted initially
 	clawState(OPEN); // not sure if auton release works; test
 }
+
+
